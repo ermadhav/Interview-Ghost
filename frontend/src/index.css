@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+
+.section textarea {
+  width: 100%;
+  padding: 10px;
+  min-height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.section button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.section button:hover {
+  background-color: #5848e5;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.button-row button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-row button:hover {
+  background-color: #218838;
+}
+
+.button-row button:last-child {
+  background-color: #007bff;
+}
+
+.button-row button:last-child:hover {
+  background-color: #0069d9;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SectionEditor from "./SectionEditor";
 import { saveResume } from "../api";
+import "../index.css";
 
 const initialResume = {
   name: "John Doe",
@@ -19,7 +20,7 @@ export default function ResumeEditor() {
 
   const handleSave = async () => {
     await saveResume(resume);
-    alert("Resume saved to MongoDB!");
+    alert("Resume saved!");
   };
 
   const handleDownload = () => {
@@ -34,7 +35,7 @@ export default function ResumeEditor() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>Resume Editor</h2>
       {Object.keys(resume).map((section) => (
         <SectionEditor
@@ -44,8 +45,10 @@ export default function ResumeEditor() {
           onChange={(val) => handleChange(section, val)}
         />
       ))}
-      <button onClick={handleSave}>Save to Database</button>
-      <button onClick={handleDownload}>Download JSON</button>
+      <div className="button-row">
+        <button onClick={handleSave}>Save to Database</button>
+        <button onClick={handleDownload}>Download JSON</button>
+      </div>
     </div>
   );
 }

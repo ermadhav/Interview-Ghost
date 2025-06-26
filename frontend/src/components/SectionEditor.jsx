@@ -11,8 +11,8 @@ export default function SectionEditor({ section, data, onChange }) {
   };
 
   return (
-    <div>
-      <h4>{section}</h4>
+    <div className="section">
+      <label>{section}</label>
       <textarea
         value={content}
         onChange={(e) => {
